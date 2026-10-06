@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+  color: #111;
+  background: #fff;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+button {
+  font: inherit;
+}
+
+main {
+  padding: 36px 0 90px;
+}
+
+/* Component namespace */
+.demo {
+  --accent: #ff5a1f;
+  --muted: #999;
+  --line: #efefef;
+  --card: #f7f7f7;
+  --scrollbar-track: #ededed;
+  --scrollbar-thumb: #c8c8c8;
+  --desc-lines-desktop: 4;
+  --desc-lines-mobile: 4;
+  --desc-lh-desktop: 1.7;
+  --desc-lh-mobile: 1.65;
+
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto 100px;
+}
+
+.demo:last-child {
+  margin-bottom: 0;
+}
+
+.demo .head {
+  margin: 0 0 44px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.35;
+  font-weight: 500;
+}
+
+.demo .slider {
+  overflow: hidden;
+}
+
+.demo .slide {
+  position: relative;
+  min-height: 410px;
+}
+
+.demo .media {
+  width: 78%;
+  height: 410px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #f1f3f5;
+}
+
+.demo .media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.demo .info {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: 2;
+  width: 42%;
+  min-height: 240px;
+  padding: 30px 32px;
+  border-radius: 10px;
+  background: rgba(248, 248, 248, .98);
+  transform: translateY(-50%);
+}
+
+.demo .title {
+  margin: 0 0 14px;
+  font-size: 29px;
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+.demo .desc {
+  max-height: calc(1em * var(--desc-lh-desktop) * var(--desc-lines-desktop));
+  overflow-y: auto;
+  padding-right: 12px;
+  color: #333;
+  font-size: 19px;
+  line-height: var(--desc-lh-desktop);
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+.demo .desc p {
+  margin: 0;
+}
+
+.demo .desc::-webkit-scrollbar {
+  width: 8px;
+}
+
+.demo .desc::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+  border-radius: 10px;
+}
+
+.demo .desc::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 10px;
+}
+
+.demo .desc::-webkit-scrollbar-thumb:hover {
+  background: #b1b1b1;
+}
+
+.demo .tabs {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-top: 26px;
+  border-top: 4px solid var(--line);
+}
+
+.demo .tab {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 18px 8px 8px;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color .25s ease;
+}
+
+.demo .tab:hover,
+.demo .tab.active {
+  color: var(--accent);
+}
+
+.demo .marker {
+  position: absolute;
+  left: 0;
+  top: -7px;
+  width: 0;
+  height: 7px;
+  background: var(--accent);
+  transform: translateX(0);
+  transition: width .28s ease, transform .28s ease;
+  pointer-events: none;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  body {
+    background: #edf3fb;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  .demo {
+    width: min(100%, 430px);
+    margin: 0 auto 30px;
+    padding: 0 16px 44px;
+    background: #fff;
+    overflow: hidden;
+  }
+
+  .demo .head {
+    margin: 0 -16px 48px;
+    padding-top: 16px;
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .demo .slider {
+    overflow: visible;
+  }
+
+  .demo .slide {
+    min-height: 0;
+    height: auto;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+  }
+
+  .demo .media {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1.43 / 1;
+    border-radius: 0;
+  }
+
+  .demo .info {
+    position: static;
+    width: 100%;
+    min-height: 180px;
+    padding: 20px 18px 24px;
+    border-radius: 0;
+    background: #fff;
+    transform: none;
+  }
+
+  .demo .title {
+    margin-bottom: 14px;
+    font-size: 18px;
+  }
+
+  .demo .desc {
+    max-height: calc(1em * var(--desc-lh-mobile) * var(--desc-lines-mobile));
+    overflow-y: auto;
+    padding-right: 8px;
+    color: #999;
+    font-size: 15px;
+    line-height: var(--desc-lh-mobile);
+  }
+
+  .demo .desc::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .demo .tabs {
+    display: none;
+  }
+}

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Swiper 多实例卡片 Demo</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css?v=1.0.0">
+</head>
+<body>
+
+<main>
+
+  <!-- Demo 01：3 项 -->
+  <section id="demo-tech-3" class="demo">
+    <h2 class="head">研究布局 · 3 项示例</h2>
+
+    <div class="slider swiper">
+      <div class="swiper-wrapper">
+
+        <article class="slide swiper-slide">
+          <div class="media">
+            <img src="images/demo-1.jpg" alt="WordPress 开发">
+          </div>
+          <div class="info">
+            <h3 class="title">WordPress 开发</h3>
+            <div class="desc">
+              <p>围绕 WordPress 主题、插件、自定义字段和内容类型开展开发实践，适合企业官网、工具型页面以及可持续迭代的后台管理功能建设。</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide swiper-slide">
+          <div class="media">
+            <img src="images/demo-2.jpg" alt="Swiper 交互">
+          </div>
+          <div class="info">
+            <h3 class="title">Swiper 交互</h3>
+            <div class="desc">
+              <p>使用 Swiper 构建可复用的响应式轮播组件，支持桌面端图文切换、手机端卡片滑动、多实例初始化，以及底部 Tab 与指示条联动。</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide swiper-slide">
+          <div class="media">
+            <img src="images/demo-5.jpg" alt="AI 协作">
+          </div>
+          <div class="info">
+            <h3 class="title">AI 协作</h3>
+            <div class="desc">
+              <p>结合 ChatGPT、DeepSeek 等 AI 工具，用于代码整理、结构设计、文档编写、需求拆解和原型验证，让前端组件开发与 WordPress 落地更高效。</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="tabs" aria-label="技术方向导航">
+      <button class="tab active" type="button">WordPress</button>
+      <button class="tab" type="button">Swiper</button>
+      <button class="tab" type="button">AI 协作</button>
+      <span class="marker" aria-hidden="true"></span>
+    </div>
+  </section>
+
+
+  <!-- Demo 02：8 项 -->
+  <section id="demo-tech-8" class="demo">
+    <h2 class="head">研究布局 · 8 项示例</h2>
+
+    <div class="slider swiper">
+      <div class="swiper-wrapper">
+
+        <article class="slide swiper-slide">
+          <div class="media"><img src="images/demo-1.jpg" alt="WordPress"></div>
+          <div class="info">
+            <h3 class="title">WordPress</h3>
+            <div class="desc"><p>围绕 WordPress 主题、插件、自定义文章类型、自定义字段和后台管理界面进行模块化开发，适合企业站、工具页以及后期持续维护升级的项目场景。</p></div>
+          </div>
+        </article>
+
+        <article class="slide swiper-slide">
+          <div class="media"><img src="images/demo-2.jpg" alt="Swiper"></div>
+          <div class="info">
+            <h3 class="title">Swiper</h3>
+            <div class="desc"><p>通过 Swiper 实现桌面端图文联动、手机端卡片滑动、多实例 section 独立初始化、底部菜单同步切换以及响应式交互体验，是当前这类模块非常合适的基础方案。</p></div>
+          </div>
+        </article>
+
+        <article class="slide swiper-slide">
+          <div class="media"><img src="images/demo-3.jpg" alt="ChatGPT"></div>
+          <div class="info">
+            <h3 class="title">ChatGPT</h3>
+            <div class="desc"><p>利用 ChatGPT 进行需求分析、组件规划、代码重构、测试思路整理和 README 文档编写，可以帮助前端开发和 WordPress 项目更快形成清晰结构。</p></div>
+          </div>
+        </article>
+
+        <article class="slide swiper-slide">
+          <div class="media"><img src="images/demo-4.jpg" alt="DeepSeek"></div>
+          <div class="info">
+            <h3 class="title">DeepSeek</h3>
+            <div class="desc"><p>结合 DeepSeek 进行代码理解、方案比较、文档辅助与技术脑暴，有助于在插件设计、前端组件拆分以及多轮测试整理中形成更完整的开发参考。</p></div>
+          </div>
+        </article>
+
+        <article class="slide swiper-slide">
+          <div class="media"><img src="images/demo-5.jpg" alt="Elementor"></div>
+          <div class="info">
+            <h3 class="title">Elementor</h3>
+            <div class="desc"><p>在 Elementor 场景下，可以将这类结构作为可复用区块输出，通过模板、短代码或自定义小工具接入，兼顾可视化搭建与后续前端样式控制。</p></div>
+          </div>
+        </article>
+
+        <article class="slide swiper-slide">
+          <div class="media"><img src="images/demo-6.jpg" alt="Cloudflare"></div>
+          <div class="info">
+            <h3 class="title">Cloudflare</h3>
+            <div class="desc"><p>页面上线后还要考虑 Cloudflare 缓存、静态资源版本号、移动端加载速度与图片压缩等问题，确保轮播组件在实际网站环境中仍然稳定可控。</p></div>
+          </div>
+        </article>
+
+        <article class="slide swiper-slide">
+          <div class="media"><img src="images/demo-7.jpg" alt="README"></div>
+          <div class="info">
+            <h3 class="title">README</h3>
+            <div class="desc"><p>每个组件最好同步整理 README，说明 HTML 结构、CSS 命名空间、Swiper 初始化逻辑、多个 section 的使用方法，以及未来迁移到 WordPress 时的注意事项。</p></div>
+          </div>
+        </article>
+
+        <article class="slide swiper-slide">
+          <div class="media"><img src="images/demo-8.jpg" alt="SQLite"></div>
+          <div class="info">
+            <h3 class="title">SQLite</h3>
+            <div class="desc"><p>如果后续需要把这些模块与工具页、后台表单或配置系统结合，也可以继续延伸到 SQLite 数据存储、本地 JSON 管理和轻量级内容维护场景。</p></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="tabs" aria-label="技术方向导航">
+      <button class="tab active" type="button">WordPress</button>
+      <button class="tab" type="button">Swiper</button>
+      <button class="tab" type="button">ChatGPT</button>
+      <button class="tab" type="button">DeepSeek</button>
+      <button class="tab" type="button">Elementor</button>
+      <button class="tab" type="button">Cloudflare</button>
+      <button class="tab" type="button">README</button>
+      <button class="tab" type="button">SQLite</button>
+      <span class="marker" aria-hidden="true"></span>
+    </div>
+  </section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js?v=1.0.0"></script>
+</body>
+</html>
